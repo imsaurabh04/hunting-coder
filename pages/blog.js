@@ -11,7 +11,7 @@ const Blog = (props) => {
 
     const fetchData = async () => {
         
-        let d = await fetch(`./api/blogs/?count=${count+2}`)
+        let d = await fetch(`../api/blogs/?count=${count+2}`)
         let data = await d.json()
         setCount(count + 2)
         setBlogs(data)
