@@ -32,7 +32,7 @@ export default function Home(props) {
           /> */}
           <img 
             className={styles.img} 
-            src="/hunting-coder.jpg" 
+            src="hunting-coder.jpg" 
             alt="hunting coder" 
             width={320}                   
             height={180}
