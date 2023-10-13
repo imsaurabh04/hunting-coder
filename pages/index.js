@@ -48,7 +48,7 @@ export default function Home(props) {
           return (
             <div key={index}>
               <a
-                href={`/blogpost/${blogItem.slug}`}
+                href={`blogpost/${blogItem.slug}`}
                 className={styles.card}
                 target="_blank"
                 rel="noopener noreferrer"
