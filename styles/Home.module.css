@@ -1,10 +1,9 @@
 .main {
   display: flex;
   flex-direction: column;
-  justify-content: space-between;
+  /* justify-content: space-between; */
   align-items: center;
-  padding: 6rem;
-  min-height: 100vh;
+  padding: 0 2rem 1.7rem;
 }
 
 .description {
@@ -41,7 +40,7 @@
 
 .grid {
   display: grid;
-  grid-template-columns: repeat(4, minmax(25%, auto));
+  grid-template-columns: repeat(3, minmax(25%, auto));
   max-width: var(--max-width);
   width: 100%;
 }
@@ -74,6 +73,7 @@
 
 .center {
   display: flex;
+  flex-direction: column;
   justify-content: center;
   align-items: center;
   position: relative;
@@ -104,9 +104,12 @@
   transform: translateZ(0);
 }
 
-.logo {
+.img {
   position: relative;
+  border-radius: 100px;
+  width: 183px;
 }
+
 /* Enable hover only on non-touch devices */
 @media (hover: hover) and (pointer: fine) {
   .card:hover {
@@ -225,5 +228,52 @@
   }
   to {
     transform: rotate(0deg);
+  }
+}
+
+.mainNav {
+  display: flex;
+  list-style: none;
+}
+
+.Navbar {
+  display: flex;
+  justify-content: center;
+  padding: 20px 0;
+}
+
+.mainNav li {
+  padding: 0 15px;
+  font-weight: 500;
+}
+
+.intro {
+  font-size: large;
+  margin: 5px;
+}
+
+.intro span{
+  color: black;
+  font-weight: 900;
+  font-size: large;
+}
+
+.cat_heading {
+  padding: 10px;
+}
+
+@media only screen and (max-width: 600px) {
+  .name {
+    font-size: 30px;
+  }
+
+  .intro {
+    font-size: large;
+    text-align: center;
+    margin: 5px;
+  }
+
+  .center {
+    padding: 4rem 0 4rem;
   }
 }

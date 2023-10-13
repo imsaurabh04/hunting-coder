@@ -1,0 +1,38 @@
+.main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 2rem;
+    padding-bottom: 80px;
+} 
+
+.blogItem {
+    margin: 5px;
+}
+
+.blogItem h2{
+    padding: 5px;
+}
+
+.blogItem p{
+    max-width: 50vw;
+    padding: 5px;
+}
+
+.btn {
+    font-weight: 600;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: small;
+    color: rgb(86, 85, 85);
+}
+
+.blogContainer {
+    margin: 10px 0;
+}
+
+@media only screen and (max-width: 600px) {
+    .blogItem p{
+        max-width: 80vw;
+        padding: 5px;
+    }
+  }
